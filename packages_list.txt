@@ -12,6 +12,7 @@ man-db 2.13.1-1
 man-pages 6.18-1
 neovim 0.12.2-1
 networkmanager 1.56.1-1
+openssh 10.3p1-1
 stow 2.4.1-1
 sudo 1.9.17.p2-2
 texinfo 7.3-1
