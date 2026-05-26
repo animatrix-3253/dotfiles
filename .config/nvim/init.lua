@@ -13,4 +13,4 @@ vim.opt.expandtab = true
 vim.opt.termguicolors = false -- change this to true when in actually terminal emulator
 
 vim.o.background = "dark"
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme pywal]]
