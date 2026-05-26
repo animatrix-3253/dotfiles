@@ -9,17 +9,14 @@ their proper places.
 
 If you do not have Stow you can obtain it from your package manager.
 
+Please note that, "I use Arch BTW" and these config have been written as such.
 ```
-# I use Arch btw.
 sudo pacman -S stow
 ```
 
-# Configs
----
-The following is a list of all the programs configured in this directory:
+```
+# To install all packages simply run
+sudo pacman -S $(cat package_list.txt)
+```
 
-- Neovim
-- Git
-- Bash
-- Htop
-
+***Please note that all the packages in the repo are from the official Arch repositories.***
