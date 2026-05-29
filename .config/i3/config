@@ -72,9 +72,9 @@ tiling_drag modifier titlebar
 bindsym $mod+Return exec xfce4-terminal
 
 # Flameshot
-bindsym Print exec flameshot gui
-bindsym Shift+Print exec flameshot full
-bindsym Ctrl+Print exec flameshot full -p ~/Pictures/Screenshots
+bindsym $mod+p exec flameshot gui
+bindsym $mod+Shift+p exec flameshot full
+bindsym $mod+Ctrl+p exec flameshot full -p ~/Pictures/Screenshots
 
 # Rofi
 bindsym $mod+d exec rofi -show drun
