@@ -33,6 +33,8 @@ c.colors.tabs.selected.even.bg = palette["color4"]
 c.colors.tabs.selected.even.fg = bg
 c.colors.tabs.selected.odd.bg = palette["color4"]
 c.colors.tabs.selected.odd.fg = bg
+
+c.colors.webpage.darkmode.enabled = True
 # ------ Theming ------
 
 # ------ Font ------

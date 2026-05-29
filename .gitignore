@@ -1,2 +1,3 @@
-.config/dconf/user
+dconf/
+systemd/
 

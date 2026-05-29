@@ -12,6 +12,23 @@ If you do not have Stow you can obtain it from your package manager.
 Please note that, "I use Arch BTW" and these config have been written as such.
 ```
 sudo pacman -S stow
+cd ~/.dotfiles
+stow .
+```
+
+# Pywal
+---
+
+```
+# Create theme with pywal
+wal -i /path/to/your/wallpaper.png
+
+# Everything except dunst will update autmatically to do it run
+cd ~/.dotfiles/.config/dunst
+chmod +x dunst_pywal.sh 
+./dunst_pywal.sh
+
+# script will not work if wal -i was not previously run. 
 ```
 
 ```
