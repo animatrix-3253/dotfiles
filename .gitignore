@@ -1,1 +1,12 @@
+# Directories
 git/
+
+# xmonad
+build-x86_64-linux/
+
+
+# Files
+
+# xmonad
+xmonad.errors
+xmonad-x86_64-linux
