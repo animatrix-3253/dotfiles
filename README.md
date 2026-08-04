@@ -34,7 +34,7 @@ stow .
 
 # Roadmap
 ---
-- [ ] Set up PyWal to theme computer
+- [x] Set up PyWal to theme computer
 
 # Important Info and News
 ---

@@ -56,6 +56,10 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+if [ -f "$HOME/.cache/wal/colors.sh" ]; then
+  source "$HOME/.cache/wal/colors.sh"
+fi
+
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
@@ -104,3 +108,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Created by `pipx` on 2026-08-04 17:56:19
+export PATH="$PATH:/home/ani/.local/bin"
