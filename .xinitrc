@@ -1,3 +1,3 @@
 #! /bin/sh
 
-exec xmonad
+dbus-run-session xmonad
