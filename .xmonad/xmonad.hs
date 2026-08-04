@@ -1,12 +1,20 @@
 import XMonad
+
+-- Utils
+import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.EZConfig
+
+-- Hooks
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
-import Graphics.X11.ExtraTypes.XF86
 import XMonad.Hooks.EwmhDesktops
 
+-- Layouts
+import XMonad.Layout.Spacing
+
+-- Other 
+import Graphics.X11.ExtraTypes.XF86
 import System.IO (hPutStrLn)
-import XMonad.Util.Run(spawnPipe)
 
 main :: IO()
 main = do 	
@@ -16,6 +24,7 @@ main = do
 		$ def
 			{ modMask = mod4Mask
 			, terminal = "alacritty"
+      , layoutHook = avoidStruts $ layoutConfig
       , startupHook = onLogin
 			, logHook = dynamicLogWithPP xmobarPP
 				{ ppOutput = hPutStrLn xmproc
@@ -44,3 +53,7 @@ main = do
 
 onLogin = do
   spawn "feh --bg-fill ~/Pictures/wallpapers/wallpaper.png"
+
+layoutConfig = spacing 10 $ tiled ||| Mirror tiled ||| Full
+  where
+    tiled = Tall 1 (3/100) (1/2)
