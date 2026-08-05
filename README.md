@@ -34,7 +34,11 @@ stow .
 
 # Roadmap
 ---
-- [x] Set up PyWal to theme computer
+- [ ] Switch to Arch
+- [ ] Add Lushwal to Neovim
+- [ ] Add Haskell support to Neovim
+- [ ] Add battery indicator to Xmobar
+- [ ] Add Neorg to Neovim
 
 # Important Info and News
 ---

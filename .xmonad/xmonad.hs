@@ -16,7 +16,7 @@ import System.IO (hPutStrLn)
 
 main :: IO ()
 main = do
-  xmproc <- spawnPipe "xmobar ~/.config/xmobar/xmobar.hs"
+  xmproc <- spawnPipe "xmobar"
 
   xmonad
     $ docks

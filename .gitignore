@@ -6,6 +6,8 @@ build-x86_64-linux/
 
 
 # Files
+*.hi
+*.o
 
 # xmonad
 xmonad.errors

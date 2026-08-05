@@ -1,0 +1,14 @@
+Config {
+  font = "xft:JetBrainsMono Nerd Font:size=10",
+  bgColor = "{background}",
+  fgColor = "{foreground}",
+  position = Top,
+  commands =
+    [ Run StdinReader
+    , Run Memory ["-t","RAM: <usedratio>%"] 10
+    , Run Date "%a %b %d %H:%M" "date" 10
+    ],
+  sepChar = "%",
+  alignSep = "}{",
+  template = "%StdinReader% }{ %memory% | %date%"
+}
