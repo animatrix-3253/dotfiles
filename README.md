@@ -35,6 +35,7 @@ stow .
 # Roadmap
 ---
 - [ ] Switch to Arch
+- [ ] Theme Qutebrowser
 - [ ] Add Lushwal to Neovim
 - [ ] Add Haskell support to Neovim
 - [ ] Add battery indicator to Xmobar
@@ -43,5 +44,7 @@ stow .
 # Important Info and News
 ---
 - I use Arch *btw*
+
+- Commit Description "themed xmobar": I overhauled Xmobar's configurations system to accomodate pywal. 
 
 - This README will serve as a planning and design doc for this repo. You can find info and longer explanations of commits here.
