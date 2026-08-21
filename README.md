@@ -46,7 +46,6 @@ stow .
 # Important Info and News
 ---
 - Dotfiles are currently for Debian. Void Linux swap in the works.
+- This README will serve as a planning and design doc for this repo. You can find info and longer explanations of commits here.
 
 ### Commit Descriptions
-
-- This README will serve as a planning and design doc for this repo. You can find info and longer explanations of commits here.
