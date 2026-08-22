@@ -37,26 +37,26 @@ main = do
           }
       }
     `additionalKeysP`
+      -- Spawn terminal
       [ ("M-t", spawn "alacritty")
+
+      -- Rofi
       , ("M-d", spawn "rofi -show drun -theme ~/.config/rofi/theme.rasi")
       , ("M-r", spawn "rofi -show run -theme ~/.config/rofi/theme.rasi")
 
-      , ("<XF86AudioRaiseVolume>",
-          spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+")
+      -- Browser
+      , ("M-b", spawn "qutebrowser")
 
-      , ("<XF86AudioLowerVolume>",
-          spawn "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")
-
-      , ("<XF86AudioMute>",
-          spawn "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle")
-
-      , ("M-S-c", kill)
+      -- Screenshot GUI
       , ("M-S-s", spawn "flameshot gui")
+
+      -- Kill Active Process
+      , ("M-S-c", kill)
       ]
 
 onLogin :: X ()
 onLogin = do
-  spawnOnce "feh --bg-fill ~/Pictures/wallpapers/wallpaper.png"
+  spawnOnce "feh --bg-fill ~/Pictures/Wallpapers/wallpaper.png"
   spawnOnce "wal -R"
 
 layoutConfig =

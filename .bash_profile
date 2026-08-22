@@ -28,3 +28,6 @@ fi
 
 # Created by `pipx` on 2026-08-04 17:56:19
 export PATH="$PATH:/home/ani/.local/bin"
+
+# Start X11
+exec startx
