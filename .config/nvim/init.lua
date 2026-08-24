@@ -5,3 +5,6 @@ require("config.keymaps")
 
 -- Plugins
 require("config.lazy")
+
+-- LSP
+require("lsp.haskell")

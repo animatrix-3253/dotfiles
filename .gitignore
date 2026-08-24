@@ -1,6 +1,8 @@
 # Directories
 git/
 
+dconf/
+
 # xmonad
 build-x86_64-linux/
 
