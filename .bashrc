@@ -91,6 +91,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:/home/ani/.local/bin:/home/ani/.ghcup/hls/2.14.0.0/bin"
-
-[ -f "/home/ani/.ghcup/env" ] && . "/home/ani/.ghcup/env" # ghcup-env
+export PATH="$PATH:/home/ani/.local/bin"
